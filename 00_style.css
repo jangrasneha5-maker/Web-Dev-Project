@@ -249,3 +249,95 @@ body {
     background-color: white;
     color: black;
 }
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+
+.contact h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+
+.contact h2 span {
+    color: #ff4d4d;
+}
+
+
+.contact-content > p {
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form {
+    max-width: 700px;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+input,
+textarea {
+    padding: 18px;
+
+    background-color: #1c1c1c;
+
+    border: 1px solid #333;
+
+    color: white;
+
+    font-family: inherit;
+}
+
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 50px;
+
+    text-align: center;
+
+    background-color: black;
+}
+
+
+footer h2 {
+    margin-bottom: 15px;
+}
+
+
+footer h2 span {
+    color: #ff4d4d;
+}
+
+
+footer p {
+    color: #777;
+    font-size: 13px;
+}
