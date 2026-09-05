@@ -1,0 +1,251 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #111111;
+    color: white;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    padding: 25px 10%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+
+.logo span {
+    color: #ff4d4d;
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+
+.nav-links a:hover {
+    color: #ff4d4d;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 100px 10% 50px;
+    gap: 60px;
+}
+
+
+.hero-content {
+    width: 50%;
+}
+
+
+.small-title {
+    color: #ff4d4d;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+
+.hero h1 {
+    font-size: 75px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+
+.hero h1 span {
+    color: #ff4d4d;
+}
+
+
+.hero-text {
+    color: #bbbbbb;
+    line-height: 1.7;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background-color: #ff4d4d;
+    color: white;
+
+    text-decoration: none;
+    border: none;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.hero-image {
+    width: 50%;
+}
+
+
+.hero-image img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* =========================
+   UPCOMING SHOWS SECTION
+========================= */
+
+.shows {
+    min-height: 100vh;
+    padding: 100px 10%;
+    background-color: #111111;
+}
+
+.shows-heading {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.shows-heading p {
+    color: #ff4d4d;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.shows-heading h2 {
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+.shows-heading h2 span {
+    color: #ff4d4d;
+}
+
+.shows-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.show {
+    display: flex;
+    align-items: center;
+    padding: 30px 40px;
+    border-bottom: 1px solid #333333;
+    gap: 40px;
+}
+
+.show-date {
+    width: 60px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.show-date strong {
+    display: block;
+    color: #ff4d4d;
+    font-size: 36px;
+    line-height: 1;
+}
+
+.show-date span {
+    display: block;
+    color: white;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.show-info {
+    flex: 1;
+}
+
+.show-info h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.show-info p {
+    color: #999999;
+    font-size: 16px;
+}
+
+.ticket-btn {
+    padding: 14px 25px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.ticket-btn:hover {
+    background-color: white;
+    color: black;
+}
