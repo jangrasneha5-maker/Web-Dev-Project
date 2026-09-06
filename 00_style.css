@@ -1,4 +1,4 @@
-/* =========================
+    /* =========================
    RESET
 ========================= */
 
@@ -248,4 +248,84 @@ body {
 .ticket-btn:hover {
     background-color: white;
     color: black;
+}
+
+/* =========================
+   MUSIC SECTION
+========================= */
+
+.music {
+    padding: 100px 10%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-heading h2 {
+    font-size: 45px;
+}
+
+.section-heading span {
+    color: #ff4d4d;
+}
+
+/* Also uses the small-title class defined earlier in your CSS */
+.small-title {
+    color: #ff4d4d;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   MUSIC GRID
+========================= */
+
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.music-card {
+    background-color: #1c1c1c;
+}
+
+.music-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.music-info {
+    padding: 25px;
+}
+
+.music-info h3 {
+    margin-bottom: 10px;
+}
+
+.music-info p {
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.music-info button {
+    background-color: transparent;
+    border: 1px solid #ff4d4d;
+    color: #ff4d4d;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .music-grid {
+        grid-template-columns: 1fr;
+    }
 }
