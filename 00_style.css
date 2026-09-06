@@ -209,97 +209,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* =========================
-   UPCOMING SHOWS SECTION
-========================= */
 
-.shows {
-    min-height: 100vh;
-    padding: 100px 10%;
-    background-color: #111111;
-}
-
-.shows-heading {
-    text-align: center;
-    margin-bottom: 70px;
-}
-
-.shows-heading p {
-    color: #ff4d4d;
-    font-size: 13px;
-    letter-spacing: 3px;
-    margin-bottom: 25px;
-}
-
-.shows-heading h2 {
-    font-size: 48px;
-    line-height: 1.1;
-}
-
-.shows-heading h2 span {
-    color: #ff4d4d;
-}
-
-.shows-list {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.show {
-    display: flex;
-    align-items: center;
-    padding: 30px 40px;
-    border-bottom: 1px solid #333333;
-    gap: 40px;
-}
-
-.show-date {
-    width: 60px;
-    text-align: center;
-    flex-shrink: 0;
-}
-
-.show-date strong {
-    display: block;
-    color: #ff4d4d;
-    font-size: 36px;
-    line-height: 1;
-}
-
-.show-date span {
-    display: block;
-    color: white;
-    font-size: 13px;
-    margin-top: 5px;
-}
-
-.show-info {
-    flex: 1;
-}
-
-.show-info h3 {
-    font-size: 18px;
-    margin-bottom: 8px;
-}
-
-.show-info p {
-    color: #999999;
-    font-size: 16px;
-}
-
-.ticket-btn {
-    padding: 14px 25px;
-    border: 1px solid white;
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-.ticket-btn:hover {
-    background-color: white;
-    color: black;
-}
 
 
 /* =========================
@@ -373,73 +283,87 @@ body {
     cursor: pointer;
 }
 
+
+
+
 /* =========================
-   MOBILE RESPONSIVE
+   SHOWS SECTION
 ========================= */
-@media (max-width: 768px) {
-    .music-grid {
-        grid-template-columns: 1fr;
-    }
 
-    .navbar {
-        padding: 20px 6%;
-    }
+.shows {
+    padding: 100px 10%;
 
-    .nav-links {
-        gap: 12px;
-    }
-
-    .nav-links a {
-        font-size: 11px;
-    }
-
-    .hero,
-    .about {
-        flex-direction: column;
-        padding: 100px 6% 60px;
-        gap: 40px;
-    }
-
-    .hero-content,
-    .hero-image,
-    .about-image,
-    .about-content {
-        width: 100%;
-    }
-
-    .hero h1 {
-        font-size: 52px;
-    }
-
-    .hero-image img,
-    .about-image img {
-        height: 380px;
-    }
-
-    .music,
-    .shows,
-    .contact {
-        padding: 70px 6%;
-    }
-
-    .show {
-        padding: 25px 0;
-        gap: 18px;
-    }
-
-    .show-info h3 {
-        font-size: 15px;
-    }
-
-    .show-info p {
-        font-size: 13px;
-    }
-
-    .ticket-btn {
-        padding: 10px 12px;
-        font-size: 11px;
-    }
+    background-color: #191919;
 }
+
+
+.show-list {
+    max-width: 900px;
+    margin: auto;
+}
+
+
+.show {
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 25px;
+
+    border-bottom: 1px solid #333;
+}
+
+
+.date {
+    text-align: center;
+    min-width: 80px;
+}
+
+
+.date h3 {
+    font-size: 35px;
+    color: #ff4d4d;
+}
+
+
+.date p {
+    font-size: 13px;
+}
+
+
+.show-info {
+    flex: 1;
+}
+
+
+.show-info h3 {
+    margin-bottom: 8px;
+}
+
+
+.show-info p {
+    color: #999;
+}
+
+
+.ticket-btn {
+    color: white;
+
+    text-decoration: none;
+
+    border: 1px solid white;
+
+    padding: 12px 20px;
+}
+
+
+.ticket-btn:hover {
+    background-color: #ff4d4d;
+    border-color: #ff4d4d;
+}
+
 
 
 /* =========================
@@ -532,4 +456,73 @@ footer p {
     color: #777;
     font-size: 13px;
 
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .music-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        padding: 20px 6%;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .hero,
+    .about {
+        flex-direction: column;
+        padding: 100px 6% 60px;
+        gap: 40px;
+    }
+
+    .hero-content,
+    .hero-image,
+    .about-image,
+    .about-content {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .hero-image img,
+    .about-image img {
+        height: 380px;
+    }
+
+    .music,
+    .shows,
+    .contact {
+        padding: 70px 6%;
+    }
+
+    .show {
+        padding: 25px 0;
+        gap: 18px;
+    }
+
+    .show-info h3 {
+        font-size: 15px;
+    }
+
+    .show-info p {
+        font-size: 13px;
+    }
+
+    .ticket-btn {
+        padding: 10px 12px;
+        font-size: 11px;
+    }
 }
